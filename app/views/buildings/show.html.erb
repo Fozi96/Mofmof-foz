@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>building:</strong>
+  <%= @building.building %>
+</p>
+
+<p>
+  <strong>Rent:</strong>
+  <%= @building.rent %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @building.address %>
+</p>
+
+<p>
+  <strong>Building age:</strong>
+  <%= @building.building_age %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @building.remarks %>
+</p>
+<hr>
+<% @building.stations.each do |poor| %>
+  <h2><b>Nearest station </b></h2>
+  <p>
+    <strong>Name of railway line:</strong>
+    <%= poor.rail_way_line %>
+  </p>
+
+  <p>
+    <strong>Station name:</strong>
+    <%= poor.station_name %>
+  </p>
+
+  <p>
+    <strong>How many minutes walks:</strong>
+    <%= poor.minutes_walk %>
+    </p>
+<% end %>
+
+<%= link_to 'Edit', edit_building_path(@building) %> |
+<%= link_to 'Back', buildings_path %>
