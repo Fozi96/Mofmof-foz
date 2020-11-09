@@ -4,7 +4,7 @@ class BuildingsController < ApplicationController
   # GET /buildings
   # GET /buildings.json
   def index
-    @buildings = building.all
+    @buildings = Building.all
   end
 
   # GET /buildings/1
@@ -14,7 +14,7 @@ class BuildingsController < ApplicationController
 
   # GET /buildings/new
   def new
-    @building = building.new
+    @building = Building.new
     2.times { @building.stations.build }
   end
 
@@ -26,7 +26,7 @@ class BuildingsController < ApplicationController
   # POST /buildings
   # POST /buildings.json
   def create
-    @building = building.new(building_params)
+    @building = Building.new(building_params)
 
     respond_to do |format|
       if @building.save
@@ -66,7 +66,7 @@ class BuildingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_building
-      @building = building.find(params[:id])
+      @building = Building.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
