@@ -1,0 +1,45 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  text-align: center;
+}
+.main-header {
+  padding-bottom: 15%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+}
+/* From here */
+header {
+   background-color:#696969 ;
+}
+header ul {
+}
+header ul a {
+}
+header li {
+}
+header ul:after {
+}
+/* Up to here the implementation of the header part */
+.main-header  img {
+ /* Implementation of the main image (the image of the white "Achieve" character) */
+}
+.about {
+ /* Implementation of the About Achieve part */
+}
+/* From here */
+.function {
+}
+.function-images {
+}
+.function-image {
+}
+/* Up to here is the implementation of the function part */
+footer {
+ /* Implementation of the footer part */
+}
+/* The css description here is only a template prepared as a hint, so follow the written description. If you want to implement it without doing anything, you can implement it as you like. Any implementation will pass if it is determined that the task requirements are satisfied and the code quality is at a certain level. */
